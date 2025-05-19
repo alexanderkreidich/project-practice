@@ -1,5 +1,19 @@
-# Документация
-
-- Папка для размещения документации по практике в формате Markdown.
-- README.md — основной файл с документацией, описывающий процесс выполнения практики.
-- При необходимости могут добавляться дополнительные файлы Markdown.
+- [About Task](https://github.com/alexanderkreidich/project-practice/blob/master/docs/About%20Task.md) - Страница с информацией работе Спам-детектора
+  - Описание
+  - Функционал
+  - Планируемый функционал
+  - Изучение технологии
+- [About events](https://github.com/alexanderkreidich/project-practice/blob/master/docs/About%20events.md) - Страница с ифнормацией о пройденных мероприятиях
+  - Введение
+  - Карьерный марафон
+  - Мероприятие от ПСБ
+  - Заключение
+- [About project](https://github.com/alexanderkreidich/project-practice/blob/master/docs/About%20project.md) - Страница с информацией о проекте
+  - Описание проекта
+  - Участники
+  - Ход работы
+  - Использумые технологии
+  - Результаты
+- [About site](https://github.com/alexanderkreidich/project-practice/blob/master/docs/About%20site.md) - Страница с информацией о сайте
+  - Структура сайте
+  - Страницы сайта 
