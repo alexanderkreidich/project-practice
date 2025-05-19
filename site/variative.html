@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О проекте</title>
+	<link rel="stylesheet" href="css/variative.css">
+</head>
+<body>
+    <div class="header">
+        <h1>LifeGuard</h1>
+        <div class="nav">
+			<a href="index.html">Главная страница</a>
+			<a href="aboutProject.html">О проекте</a>
+			<a href="participants.html">Участники</a>
+            <a href="journal.html">Журнал</a>
+            <a href="resources.html">Ресурсы</a>
+			<a href="reports.html">Отчеты</a>
+        </div>
+    </div>
+    <div class="container">
+		<h2>Вариативная часть проекта</h2>
+        <div class="box">
+			<p style="font-family: cursive;"><u>Описание вариативной части задания по проектной практике:</u><p/>
+			<p>Задание включало разработку модуля для классификации SMS-сообщений (спам/не спам) с использованием машинного обучения. <p/>
+			<p style="font-family: cursive;">Основные этапы: <p/>
+			<p>1. Анализ и выбор алгоритмов (ChooseClassifier.py):<p/>
+			<p style="margin-left: 50px;">- тестирование классификаторов (SVС, RandomForest, Naive Bayes…);<p/>
+			<p style="margin-left: 50px;">- выбор SVС с TfidfVectorizer как оптимального решения.<p/>
+			<p>2. Обучение модели (TrainModel.py):<p/>
+			<p style="margin-left: 50px;">- векторизация текста (TfidfVectorizer);<p/>
+			<p style="margin-left: 50px;">- обучение SVС на предоставленном датасете;<p/>
+			<p style="margin-left: 50px;">- экспорт модели через joblib.<p/>
+			<p>3. Развёртывание системы (main.py):<p/>
+			<p style="margin-left: 50px;">- создание Flask-приложения для тестирования модели.<p/>
+			<p style="font-family: cursive;"><u>Описание достигнутых результатов:</u><p/>
+			<p style="margin-left: 50px;">- выбор оптимального классификатора для обучения; <p/>
+			<p style="margin-left: 50px;">- достижение точность модели: 98.2%;<p/>
+			<p style="margin-left: 50px;">- реализован веб-интерфейс для проверки сообщений.<p/>
+			<p style="margin-top: 50px; margin-right: 50px;"><u>Часть результата:</u></p>
+        </div>
+    </div>
+	<div class="image-row">
+        <!-- 1 -->
+        <div class="image-with-caption">
+            <img src="images/variative1.jpg">
+        </div>
+        
+        <!-- 2 -->
+        <div class="image-with-caption">
+            <img src="images/variative2.jpg">
+        </div>
+        
+        <!-- 3 -->
+        <div class="image-with-caption">
+            <img src="images/variative3.jpg">
+        </div>
+	</div>
+</body>
+</html>

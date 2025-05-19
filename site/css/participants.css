@@ -79,7 +79,9 @@
 		}
 
 		.image-row {
-			display: flex;
+			
+			display: grid;
+			grid-template-columns: auto auto auto;
 			justify-content: space-around; /* Равномерное распределение */
 			align-items: flex-start; /* Выравнивание по верхнему краю */
 			width: 100%;
@@ -89,7 +91,7 @@
 		.image-with-caption {
 			user-select: none;
 			flex: 1; /* Гибкое распределение пространства */
-			max-width: 30%; /* Максимальная ширина блока */
+			max-width: 90%; /* Максимальная ширина блока */
 			display: flex;
 			flex-direction: column;
 			align-items: center;
