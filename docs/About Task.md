@@ -27,7 +27,6 @@
 - ChooseClassifier.py
     - Сравнение алгоритмов (SVC, RandomForest, Naive Bayes).
     - Выбор оптимальной модели (SVC + TfidfVectorizer).
-    - /first_aid [травма] - Получить инструкции по оказанию первой помощи при травме (например, при ожоге, порезе).
 - TrainModel.py
   - Векторизация текста (TfidfVectorizer).
   - Обучение и сохранение модели (joblib).
