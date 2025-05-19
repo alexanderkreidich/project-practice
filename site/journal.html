@@ -4,73 +4,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Журнал</title>
-	<link rel="stylesheet" href="css/journal.css">
+    <link rel="stylesheet" href="css/journal.css">
 </head>
 <body>
     <div class="header">
         <h1>LifeGuard</h1>
+        <div class="burger-menu">☰</div>
         <div class="nav">
-			<a href="index.html">Главная страница</a>
+            <a href="index.html">Главная страница</a>
             <a href="aboutProject.html">О проекте</a>
             <a href="participants.html">Участники</a>
             <a href="resources.html">Ресурсы</a>
-			<a href="variative.html">Вариативная часть</a>
-			<a href="reports.html">Отчеты</a>
+            <a href="variative.html">Вариативная часть</a>
+            <a href="reports.html">Документация</a>
         </div>
     </div>
     <div class="container">
-		<h2>Журнал</h2>
+        <h2>Журнал</h2>
         <div class="box">
-		<div class="box-text">
-				<p>*Задание(фронтэнд): <u>работа с интерфейсом приложения, сайта</u>*</p>
-				<p>*Состояние: выполнен*</p>
-				<p>*Дата выполнения: 23.02.2025*</p>
-				<p>*Выполнил: <u>Кредич Александр</u>*</p>
-				<p>-*Описание: Сделаны странички документаоборота, просмотра смен. Сделана светлая тема приложения.*-</p>
+            <div class="box-text">
+                <div class="task-header">
+                    <span class="task-type">[Фронтенд]</span>
+                    <span class="task-title">Работа с интерфейсом приложения, сайта</span>
+                </div>
+                <div class="task-details">
+                    <p><strong>Состояние:</strong> <span class="status-done">Выполнено</span></p>
+                    <p><strong>Дата выполнения:</strong> 23.02.2025</p>
+                    <p><strong>Исполнитель:</strong> Кредич Александр</p>
+                    <p class="task-description">Сделаны странички документооборота, просмотра смен. Сделана светлая тема приложения.</p>
+                </div>
+            </div>
+
+            <div class="box-text">
+                <div class="task-header">
+                    <span class="task-type">[Фронтенд]</span>
+                    <span class="task-title">Разработка документооборота</span>
+                </div>
+                <div class="task-details">
+                    <p><strong>Состояние:</strong> <span class="status-in-progress">В процессе</span></p>
+                    <p><strong>Дата начала:</strong> 07.03.2025</p>
+                    <p><strong>Исполнитель:</strong> Кредич Александр</p>
+                    <p class="task-description">В процессе выполнения</p>
+                </div>
+            </div>
+			<div class="box-text">
+				<div class="task-header">
+                    <span class="task-type">[бэкэнд]</span>
+                    <span class="task-title">Сделать сервис логов</span>
+                </div>
+                <div class="task-details">
+                    <p><strong>Состояние:</strong> <span class="status-in-progress">В процессе</span></p>
+                    <p><strong>Дата начала:</strong> 07.03.2025</p>
+                    <p><strong>Исполнитель:</strong> Андриянов Яромир</p>
+                    <p class="task-description">В процессе выполнения</p>
+                </div>
 			</div>
 			<div class="box-text">
-				<p>*Задание(фронтэнд): <u>разработка документооборота</u>*</p>
-				<p>*Состояние: в процессе*</p>
-				<p>*Дата начала: 07.03.2025*</p>
-				<p>*Выполняет: <u>Кредич Александр</u>*</p>
-				<p>-*Описание: в процессе выполнения*-</p>
+				<div class="task-header">
+                    <span class="task-type">[бэкэнд]</span>
+                    <span class="task-title">Cделать класс логгера</span>
+                </div>
+				<div class="task-details">
+                    <p><strong>Состояние:</strong> <span class="status-done">Выполнено</span></p>
+                    <p><strong>Дата выполнения:</strong> 01.04.2025</p>
+                    <p><strong>Исполнитель:</strong> Голик Владислав, Дмитрий</p>
+                    <p class="task-description">Описание: класс сделан, сами логи сохряняются в файл. Проблем нет</p>
+                </div>
 			</div>
 			<div class="box-text">
-				<p>*Задание(бэкэнд): <u>Сделать сервис логов</u>*</p>
-				<p>*Состояние: в процессе*</p>
-				<p>*Дата начала: 07.03.2025*</p>
-				<p>*Выполняет: <u>Андриянов Яромир</u>*</p>
-				<p>-*Описание: в процессе выполнения*-</p>
+				<div class="task-header">
+                    <span class="task-type">[бэкэнд]</span>
+                    <span class="task-title">продумать, представить свою концепцию документооборота</span>
+                </div>
+				<div class="task-details">
+                    <p><strong>Состояние:</strong> <span class="status-done">Выполнено</span></p>
+                    <p><strong>Дата выполнения:</strong> 07.04.2025</p>
+                    <p><strong>Исполнитель:</strong> Голик Владислав, Шемчук Мирон</p>
+                    <p class="task-description">Описание: сделано</p>
+                </div>
 			</div>
 			<div class="box-text">
-				<p>*Задание(бэкэнд): <u>сделать класс логгера</u>*</p>
-				<p>*Состояние: выполнен*</p>
-				<p>*Дата выполнения: 01.04.2025*</p>
-				<p>*Выполнили: <u>Голик Владислав, Дмитрий</u>*</p>
-				<p>-*Описание: класс сделан, сами логи сохряняются в файл. Проблем нет.*-</p>
+				<div class="task-header">
+                    <span class="task-type">[бэкэнд]</span>
+                    <span class="task-title">продумать, представить свою концепцию документооборота</span>
+                </div>
+				<div class="task-details">
+                    <p><strong>Состояние:</strong> <span class="status-done">Выполнено</span></p>
+                    <p><strong>Дата выполнения:</strong> 13.04.2025</p>
+                    <p><strong>Исполнитель:</strong> Голик Дмитрий</p>
+                    <p class="task-description">Описание: сделано</p>
+                </div>
 			</div>
 			<div class="box-text">
-				<p>*Задание(бэкэнд): <u>продумать, представить свою концепцию документооборота</u>*</p>
-				<p>*Состояние: выполнен*</p>
-				<p>*Дата выполнения: 07.04.2025*</p>
-				<p>*Выполнил: <u>Голик Владислав, Шемчук Мирон</u>*</p>
-				<p>-*Описание: сделано*-</p>
-			</div>
-			<div class="box-text">
-				<p>*Задание(бэкэнд): <u>продумать, представить свою концепцию документооборота</u>*</p>
-				<p>*Состояние: выполнен*</p>
-				<p>*Дата выполнения: 13.04.2025*</p>
-				<p>*Выполнил: <u>Голик Дмитрий</u>*</p>
-				<p>-*Описание: сделано*-</p>
-			</div>
-			<div class="box-text">
-				<p>*Задание(бэкэнд): <u>разработка сервиса документооборота</u>*</p>
-				<p>*Состояние: в процессе*</p>
-				<p>*Дата начала: 08.05.2025*</p>
-				<p>*Выполняют: <u>Голик Владислав, Голик Дмитрий, Ганичев Ярослав, Шемчук Мирон</u>*</p>
-				<p>-*Описание: в процессе выполнения*-</p>
+				<div class="task-header">
+                    <span class="task-type">[бэкэнд]</span>
+                    <span class="task-title">разработка сервиса документооборота</span>
+                </div>
+				<div class="task-details">
+                    <p><strong>Состояние:</strong> <span class="status-in-progress">В процессе</span></p>
+                    <p><strong>Дата начала:</strong> 13.04.2025</p>
+                    <p><strong>Исполнитель:</strong> Голик Владислав, Голик Дмитрий, Ганичев Ярослав, Шемчук Мирон</p>
+                    <p class="task-description">Описание: в процессе выполнения</p>
+                </div>
 			</div>
         </div>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const burger = document.querySelector('.burger-menu');
+            const nav = document.querySelector('.nav');
+            
+            burger.addEventListener('click', function() {
+                nav.classList.toggle('active');
+                burger.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
 </html>

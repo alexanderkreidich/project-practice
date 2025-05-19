@@ -1,126 +1,235 @@
-		body {
-			margin: 0;
-			padding: 0;
-			background-color: #272736;
-			display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .header {
-            width: 98%;
+/* Базовые стили */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #272736;
+    overflow-x: hidden;
+    user-select: none;
+}
 
-            color: #fff;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px;
-        }
-        .header h1 {
-			user-select: none;  /* Стандартное свойство */
-			-webkit-user-select: none;
-			-moz-user-select: none;
-			-ms-user-select: none; 
-			
-            color: #E31937;
-            margin-top: 1px;
-            margin-left:1.5%; 
-            font-size: 45px;
-            font-family: 'Kaushan Script', cursive;
-            border-text: 3px solid;
-            text-shadow: 2px 1px 0 #000;
-        }
-        .nav {
-			user-select: none;
-            display: flex;
-            justify-content: center;
-            width: 100%;
-        }
-        .nav a {
-            text-decoration: none;
-            font-size: 20px;
-            margin: 0 50px; /* Отступ между ссылками */
-            position: relative;
-            margin-bottom: 50px;
-            font-family: 'Kaushan Script', cursive;
-            color: #FFFFFF;
-            text-shadow: 2px 2px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-        }
-        .nav a:hover {
-            color: #F9C80E; /* цвет при наведении */
-            text-shadow: 1px 1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-        }
-        .nav a:hover::before {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 100%;
-            height: 2px;
-            background-color: #FFFFFF; /* полосочка */
-            text-shadow: 1px 1px 0 #000, 1px 1px 0 #000, 1px 1px 0 #000, 1px 1px 0 #000;
-        }
-        .container {
-			width: 100%;
-			max-width: 1200px;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			margin-top: 20px;
-		}
+/* Шапка */
+.header {
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #272736;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
 
-		.container h2 {
-			font-family: 'Kaushan Script', cursive;
-			user-select: none;
-			font-size: 45px;
-			color: #F9C80E;
-			margin-bottom: 30px;
-			text-shadow: 3px 2px 0 #000;
-			text-align: center;
-		}
+.header h1 {
+    color: #E31937;
+    margin: 0;
+    font-size: 2.5rem;
+    font-family: 'Kaushan Script', cursive;
+    text-shadow: 2px 1px 0 #000;
+    z-index: 2;
+}
 
-		.image-row {
-			
-			display: grid;
-			grid-template-columns: auto auto auto;
-			justify-content: space-around; /* Равномерное распределение */
-			align-items: flex-start; /* Выравнивание по верхнему краю */
-			width: 100%;
-			gap: 20px; /* Расстояние между блоками */
-		}
+/* Навигация */
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
 
-		.image-with-caption {
-			user-select: none;
-			flex: 1; /* Гибкое распределение пространства */
-			max-width: 90%; /* Максимальная ширина блока */
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			text-align: center;
-		}
+.nav a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin: 0 20px;
+    font-family: 'Kaushan Script', cursive;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 0 #000;
+    padding: 5px 0;
+    position: relative;
+    transition: color 0.3s;
+}
 
-		.image-with-caption img {
-			user-select: none;
-			border: 2px solid #000000;
-			width: 100%;
-			height: auto;
-			border-radius: 8px;
-			margin-bottom: 15px;
-			object-fit: cover;
-		}
+.nav a:hover {
+    color: #F9C80E;
+}
 
-		.image-with-caption .caption {
-			font-family: cursive;
-			font-size: 18px;
-			color: #FFFFFF;
-			text-shadow: 1px 1px 1px #000;
-			margin: 0;
-			width: 100%;
-		}
-		.image-with-caption .captionT {
-			font-family: cursive;
-			font-size: 24px;
-			color: #FFFFFF;
-			text-shadow: 1px 1px 1px #000;
-			margin: 0;
-			width: 100%;
-		}
+.nav a:hover::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #FFFFFF;
+}
+
+/* Бургер-меню */
+.burger-menu {
+    display: none;
+    cursor: pointer;
+    font-size: 2rem;
+    color: white;
+    z-index: 3;
+}
+
+/* Контент */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    padding: 100px 0 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container h2 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2.5rem;
+    color: #F9C80E;
+    margin-bottom: 30px;
+    text-shadow: 3px 2px 0 #000;
+    text-align: center;
+}
+
+/* Сетка участников */
+.image-row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.image-with-caption {
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.image-with-caption:hover {
+    transform: translateY(-5px);
+}
+
+.image-with-caption img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #F9C80E;
+    margin-bottom: 15px;
+}
+
+.captionT {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1.5rem;
+    color: #F9C80E;
+    margin: 10px 0;
+    text-shadow: 2px 2px 0 #000;
+}
+
+.caption {
+    font-family: cursive;
+    font-size: 1rem;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 1px #000;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Медиазапросы для мобильных устройств */
+@media (max-width: 992px) {
+    .image-row {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 10px 5%;
+    }
+    
+    .header h1 {
+        font-size: 2rem;
+    }
+    
+    .burger-menu {
+        display: block;
+    }
+    
+    .nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background-color: rgba(39, 39, 54, 0.98);
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 80px;
+        z-index: 2;
+        transition: right 0.3s ease;
+    }
+    
+    .nav.active {
+        right: 0;
+    }
+    
+    .nav a {
+        margin: 15px 0;
+        font-size: 1.2rem;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .burger-menu.active {
+        position: fixed;
+        right: 20px;
+        top: 15px;
+    }
+    
+    .container {
+        padding-top: 80px;
+    }
+    
+    .container h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .container h2 {
+        font-size: 1.8rem;
+    }
+    
+    .nav {
+        width: 85%;
+    }
+    
+    .image-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .image-with-caption {
+        max-width: 100%;
+    }
+}

@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ресурсы</title>
-	<link rel="stylesheet" href="css/resources.css">
+    <title>Документация</title>
+    <link rel="stylesheet" href="css/resources.css">
 </head>
 <body>
     <div class="header">
         <h1>LifeGuard</h1>
+        <div class="burger-menu">☰</div>
         <div class="nav">
-			<a href="index.html">Главная страница</a>
+            <a href="index.html">Главная страница</a>
 			<a href="aboutProject.html">О проекте</a>
 			<a href="participants.html">Участники</a>
             <a href="journal.html">Журнал</a>
@@ -19,25 +20,38 @@
         </div>
     </div>
     <div class="container">
-		<h2>Ресурсы</h2>
+        <h2>Ресурсы</h2>
         <div class="box">
-			<div class="rows">
-			<p>Отчет по вариативной части: <p/>
-			<a href="https://github.com/alexanderkreidich/project-practice/tree/master/docs" class="link-button">перейти</a>
-			</div>
-			<div class="rows">
-			<p>Отчет по мероприятиям: <p/>
-			<a href="https://github.com/alexanderkreidich/project-practice/tree/master/docs" class="link-button">перейти</a>
-			</div>
-			<div class="rows">
-			<p>Отчет по проекту: <p/>
-			<a href="https://github.com/alexanderkreidich/project-practice/tree/master/docs" class="link-button">перейти</a>
-			</div>
-			<div class="rows">
-			<p>Отчет по сайту: <p/>
-			<a href="https://github.com/alexanderkreidich/project-practice/tree/master/docs" class="link-button">перейти</a>
-			</div>
+            <div class="resource-card">
+                <p class="resource-description">Документация по вариативной части:</p>
+                <a href="https://github.com/alexanderkreidich/project-practice/blob/master/docs/About%20Task.md" class="link-button">Перейти</a>
+            </div>
+            
+            <div class="resource-card">
+                <p class="resource-description">Документация по мероприятиям:</p>
+                <a href="https://github.com/alexanderkreidich/project-practice/blob/master/docs/About%20events.md" class="link-button">Перейти</a>
+            </div>
+            
+            <div class="resource-card">
+                <p class="resource-description">Документация по проекту:</p>
+                <a href="https://github.com/alexanderkreidich/project-practice/blob/master/docs/About%20project.md" class="link-button">Перейти</a>
+            </div>
+			<div class="resource-card">
+                <p class="resource-description">Документация по сайту:</p>
+                <a href="https://github.com/alexanderkreidich/project-practice/blob/master/docs/About%20site.md" class="link-button">Перейти</a>
+            </div>
         </div>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const burger = document.querySelector('.burger-menu');
+            const nav = document.querySelector('.nav');
+            
+            burger.addEventListener('click', function() {
+                nav.classList.toggle('active');
+                burger.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
 </html>

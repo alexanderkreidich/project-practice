@@ -4,32 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ресурсы</title>
-	<link rel="stylesheet" href="css/resources.css">
+    <link rel="stylesheet" href="css/resources.css">
 </head>
 <body>
     <div class="header">
         <h1>LifeGuard</h1>
+        <div class="burger-menu">☰</div>
         <div class="nav">
-			<a href="index.html">Главная страница</a>
-			<a href="aboutProject.html">О проекте</a>
-			<a href="participants.html">Участники</a>
+            <a href="index.html">Главная страница</a>
+            <a href="aboutProject.html">О проекте</a>
+            <a href="participants.html">Участники</a>
             <a href="journal.html">Журнал</a>
-			<a href="variative.html">Вариативная часть</a>
-			<a href="reports.html">Отчеты</a>
+            <a href="variative.html">Вариативная часть</a>
+            <a href="reports.html">Документация</a>
         </div>
     </div>
     <div class="container">
-		<h2>Ресурсы</h2>
+        <h2>Ресурсы</h2>
         <div class="box">
-			<div class="rows">
-			<p>Официальная группа Вконтакте СПСО Феникс: <p/>
-			<a href="https://vk.com/spsofnx" class="link-button">перейти</a>
-			</div>
-			<div class="rows">
-			<p>Ссылка на описание проекта по Проектной деятельности: <p/>
-			<a href="https://projects.mospolytech.ru/tproduct/413315123-369351020332-lifeguard" class="link-button">перейти</a>
-			</div>
+            <div class="resource-card">
+                <p class="resource-description">Официальная группа Вконтакте СПСО Феникс:</p>
+                <a href="https://vk.com/spsofnx" class="link-button">Перейти</a>
+            </div>
+            
+            <div class="resource-card">
+                <p class="resource-description">Описание проекта по Проектной деятельности:</p>
+                <a href="https://projects.mospolytech.ru/tproduct/413315123-369351020332-lifeguard" class="link-button">Перейти</a>
+            </div>
+            
+            <div class="resource-card">
+                <p class="resource-description">Репозиторий по проектной практике нашей группы:</p>
+                <a href="https://github.com/alexanderkreidich/project-practice/" class="link-button">Перейти</a>
+            </div>
         </div>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const burger = document.querySelector('.burger-menu');
+            const nav = document.querySelector('.nav');
+            
+            burger.addEventListener('click', function() {
+                nav.classList.toggle('active');
+                burger.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
 </html>

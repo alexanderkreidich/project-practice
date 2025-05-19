@@ -4,32 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная страница</title>
-	<link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-<video autoplay muted loop playsinline>
+    <video autoplay muted loop playsinline>
         <source src="videos/fon.mp4" type="video/mp4">
     </video>
     <div class="header">
         <h1>LifeGuard</h1>
+        <div class="burger-menu">☰</div>
         <div class="nav">
             <a href="aboutProject.html">О проекте</a>
             <a href="participants.html">Участники</a>
             <a href="journal.html">Журнал</a>
             <a href="resources.html">Ресурсы</a>
-			<a href="variative.html">Вариативная часть</a>
-			<a href="reports.html">Отчеты</a>
+            <a href="variative.html">Вариативная часть</a>
+            <a href="reports.html">Документация</a>
         </div>
     </div>
     <div class="container">
         <div class="text-box">
             <h2>Проект по предмету "Проектная деятельность" - LifeGuard</h2>
-		</div>
-		<div class="text-box", style="border: 2px; border-color: #FFFFF; border-radius: 10px;">
-            <p style="margin-bottom: 30px;">Разрабатывается кроссплатформенное приложение (мобильное, десктопное и веб-версия) для автоматизации ключевых процессов пожарно-спасательных служб;</p>
-			<p style="margin-bottom: 30px;">Стоит задача объединить все необходимые для работы пожарной охраны функции в единой информационной системе;</p>
-			<p style="margin-bottom: 30px;">Проект сочетает практическую значимость для пожарных служб и образовательную ценность для студентов-разработчиков.</p>
         </div>
+        <div class="text-box">
+            <p>Разрабатывается кроссплатформенное приложение (мобильное, десктопное и веб-версия) для автоматизации ключевых процессов пожарно-спасательных служб;</p>
+            <p>Стоит задача объединить все необходимые для работы пожарной охраны функции в единой информационной системе;</p>
+            <p>Проект сочетает практическую значимость для пожарных служб и образовательную ценность для студентов-разработчиков.</p>
+        </div>
+		<div class="text-box">
+			<h2>Руководители</h2>
+            <p>
+				к.т.н., доцент Л.С. Ермакова
+			</p>
+			<p>к.т.н., доцент Ю.С. Кудрявцева</p>
+		</div>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const burger = document.querySelector('.burger-menu');
+            const nav = document.querySelector('.nav');
+            
+            burger.addEventListener('click', function() {
+                nav.classList.toggle('active');
+                burger.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
+</html>
 </html>

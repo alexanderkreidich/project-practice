@@ -3,58 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>О проекте</title>
-	<link rel="stylesheet" href="css/variative.css">
+    <title>Вариативная часть</title>
+    <link rel="stylesheet" href="css/variative.css">
 </head>
 <body>
     <div class="header">
         <h1>LifeGuard</h1>
+        <div class="burger-menu">☰</div>
         <div class="nav">
-			<a href="index.html">Главная страница</a>
-			<a href="aboutProject.html">О проекте</a>
-			<a href="participants.html">Участники</a>
+            <a href="index.html">Главная страница</a>
+            <a href="aboutProject.html">О проекте</a>
+            <a href="participants.html">Участники</a>
             <a href="journal.html">Журнал</a>
             <a href="resources.html">Ресурсы</a>
-			<a href="reports.html">Отчеты</a>
+            <a href="reports.html">Документация</a>
         </div>
     </div>
     <div class="container">
-		<h2>Вариативная часть проекта</h2>
+        <h2>Вариативная часть проекта</h2>
         <div class="box">
-			<p style="font-family: cursive;"><u>Описание вариативной части задания по проектной практике:</u><p/>
-			<p>Задание включало разработку модуля для классификации SMS-сообщений (спам/не спам) с использованием машинного обучения. <p/>
-			<p style="font-family: cursive;">Основные этапы: <p/>
-			<p>1. Анализ и выбор алгоритмов (ChooseClassifier.py):<p/>
-			<p style="margin-left: 50px;">- тестирование классификаторов (SVС, RandomForest, Naive Bayes…);<p/>
-			<p style="margin-left: 50px;">- выбор SVС с TfidfVectorizer как оптимального решения.<p/>
-			<p>2. Обучение модели (TrainModel.py):<p/>
-			<p style="margin-left: 50px;">- векторизация текста (TfidfVectorizer);<p/>
-			<p style="margin-left: 50px;">- обучение SVС на предоставленном датасете;<p/>
-			<p style="margin-left: 50px;">- экспорт модели через joblib.<p/>
-			<p>3. Развёртывание системы (main.py):<p/>
-			<p style="margin-left: 50px;">- создание Flask-приложения для тестирования модели.<p/>
-			<p style="font-family: cursive;"><u>Описание достигнутых результатов:</u><p/>
-			<p style="margin-left: 50px;">- выбор оптимального классификатора для обучения; <p/>
-			<p style="margin-left: 50px;">- достижение точность модели: 98.2%;<p/>
-			<p style="margin-left: 50px;">- реализован веб-интерфейс для проверки сообщений.<p/>
-			<p style="margin-top: 50px; margin-right: 50px;"><u>Часть результата:</u></p>
+            <div class="section">
+                <h3 class="section-title">Описание вариативной части задания по проектной практике:</h3>
+                <p>Задание включало разработку модуля для классификации SMS-сообщений (спам/не спам) с использованием машинного обучения.</p>
+                
+                <h3 class="section-title">Основные этапы:</h3>
+                <div class="stage">
+                    <h4>1. Анализ и выбор алгоритмов (ChooseClassifier.py):</h4>
+                    <ul>
+                        <li>Тестирование классификаторов (SVС, RandomForest, Naive Bayes…)</li>
+                        <li>Выбор SVС с TfidfVectorizer как оптимального решения</li>
+                    </ul>
+                </div>
+                
+                <div class="stage">
+                    <h4>2. Обучение модели (TrainModel.py):</h4>
+                    <ul>
+                        <li>Векторизация текста (TfidfVectorizer)</li>
+                        <li>Обучение SVС на предоставленном датасете</li>
+                        <li>Экспорт модели через joblib</li>
+                    </ul>
+                </div>
+                
+                <div class="stage">
+                    <h4>3. Развёртывание системы (main.py):</h4>
+                    <ul>
+                        <li>Создание Flask-приложения для тестирования модели</li>
+                    </ul>
+                </div>
+                
+                <h3 class="section-title">Достигнутые результаты:</h3>
+                <ul class="results">
+                    <li>Выбор оптимального классификатора для обучения</li>
+                    <li>Достижение точности модели: 98.2%</li>
+                    <li>Реализован веб-интерфейс для проверки сообщений</li>
+                </ul>
+            </div>
+        </div>
+        
+        <h3 class="results-title">Результаты работы:</h3>
+        <div class="image-row">
+            <div class="image-with-caption">
+                <img src="images/variative1.jpg" alt="Результат работы 1">
+            </div>
+            <div class="image-with-caption">
+                <img src="images/variative2.jpg" alt="Результат работы 2">
+            </div>
+            <div class="image-with-caption">
+                <img src="images/variative3.jpg" alt="Результат работы 3">
+            </div>
         </div>
     </div>
-	<div class="image-row">
-        <!-- 1 -->
-        <div class="image-with-caption">
-            <img src="images/variative1.jpg">
-        </div>
-        
-        <!-- 2 -->
-        <div class="image-with-caption">
-            <img src="images/variative2.jpg">
-        </div>
-        
-        <!-- 3 -->
-        <div class="image-with-caption">
-            <img src="images/variative3.jpg">
-        </div>
-	</div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const burger = document.querySelector('.burger-menu');
+            const nav = document.querySelector('.nav');
+            
+            burger.addEventListener('click', function() {
+                nav.classList.toggle('active');
+                burger.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
 </html>
