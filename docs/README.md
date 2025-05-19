@@ -3,7 +3,7 @@
   - Функционал
   - Планируемый функционал
   - Изучение технологии
-- [About events](https://github.com/alexanderkreidich/project-practice/blob/master/docs/About%20events.md) - Страница с ифнормацией о пройденных мероприятиях
+- [About events](https://github.com/alexanderkreidich/project-practice/blob/master/docs/About%20Events.md) - Страница с ифнормацией о пройденных мероприятиях
   - Введение
   - Карьерный марафон
   - Мероприятие от ПСБ
