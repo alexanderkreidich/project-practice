@@ -1,5 +1,5 @@
 # Отчёты в бинарных форматах
 
-- В этот файл добавьте ссылки на файлы отчётов и краткое описание к ним.
-- Файлы могут быть в форматах DOCX, PDF и др.
-- Структура отчёта по проектной практике приведена в файле [practice_report_template.docx](practice_report_template.docx).
+- Отчет о мероприятии ([docx](https://github.com/alexanderkreidich/project-practice/blob/master/reports/events_report.docx), [pdf](https://github.com/alexanderkreidich/project-practice/blob/master/reports/events_report.pdf)) — отчет о пройденных нашей командой мероприятиях
+- Отчет по проектной практике ([docx](https://github.com/alexanderkreidich/project-practice/blob/master/reports/practice_report.docx), [pdf](https://github.com/alexanderkreidich/project-practice/blob/master/reports/practice_report.pdf)) — отчет о прохождении проектной практики, достигнутых результатах.
+- Структура отчёта по проектной практике приведена в файле [practice_report_template.docx](https://github.com/alexanderkreidich/project-practice/blob/master/reports/practice_report_template.docx).
